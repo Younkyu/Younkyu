@@ -11,3 +11,4 @@
 * [데이터베이스,네트워크,암호화](https://github.com/Younkyu/Younkyu/blob/master/pdf/170112%20-%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%2C%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%2C%EC%95%94%ED%98%B8%ED%99%94.pdf
 )
 * [공인인증서와 문제점, 모바일 앱 접근성](https://github.com/Younkyu/Younkyu/blob/master/pdf/%EA%B3%B5%EC%9D%B8%EC%9D%B8%EC%A6%9D%EC%84%9C%EC%99%80_%EB%AC%B8%EC%A0%9C%EC%A0%90%2C%EB%AA%A8%EB%B0%94%EC%9D%BC_%EC%95%B1_%EC%A0%91%EA%B7%BC%EC%84%B1.pdf)
+* [Software](https://github.com/Younkyu/Younkyu/tree/master/pdf)
