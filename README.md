@@ -14,4 +14,6 @@
 * [Software](https://github.com/Younkyu/Younkyu/blob/master/pdf/170113%20-%20software.md)
 * [Java](https://github.com/Younkyu/Younkyu/blob/master/pdf/170116%20-%20java.md)
 * [조건문과반복문](https://github.com/Younkyu/Younkyu/blob/master/pdf/170117%20-%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%EA%B3%BC%20%EB%B0%98%EB%B3%B5%EB%AC%B8.md)
+* [배열과 동적배열을 활용한 예제](https://github.com/Younkyu/Younkyu/blob/master/pdf/170118%20-%20%EB%B0%B0%EC%97%B4%EA%B3%BC%20%EB%8F%99%EC%A0%81%EB%B0%B0%EC%97%B4%EC%9D%84%20%ED%99%9C%EC%9A%A9%ED%95%9C%20%EC%98%88%EC%A0%9C%EB%93%A4.md)
+* [달팽이 그리기에 대한 고찰](https://github.com/Younkyu/Younkyu/blob/master/pdf/170118%20-%20%EB%8B%AC%ED%8C%BD%EC%9D%B4%EA%B7%B8%EB%A6%AC%EA%B8%B0%EC%97%90%20%EB%8C%80%ED%95%9C%20%EA%B3%A0%EC%B0%B0.md)
 * [객체지향프로그램,게시판만들기]()
