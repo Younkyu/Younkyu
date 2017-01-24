@@ -20,3 +20,4 @@
 * [파일 읽기와 쓰기](https://github.com/Younkyu/Younkyu/blob/master/pdf/170120%20-%20%ED%8C%8C%EC%9D%BC%20%EC%9D%BD%EA%B8%B0%EC%99%80%20%EC%93%B0%EA%B8%B0.md)
 * [2주차 정리](https://github.com/Younkyu/Younkyu/blob/master/pdf/170121%20-%202%EC%A3%BC%EC%B0%A8%20%ED%9A%8C%EA%B3%A0%EB%A1%9D.md)
 * [안드로이드 스튜디오 시작]()
+* [레이아웃,화면전환,계산기앱]()
