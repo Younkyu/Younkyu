@@ -19,5 +19,5 @@
 * [객체지향프로그램,게시판만들기](https://github.com/Younkyu/Younkyu/blob/master/pdf/170119%20-%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%2C%EA%B2%8C%EC%8B%9C%ED%8C%90%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 * [파일 읽기와 쓰기](https://github.com/Younkyu/Younkyu/blob/master/pdf/170120%20-%20%ED%8C%8C%EC%9D%BC%20%EC%9D%BD%EA%B8%B0%EC%99%80%20%EC%93%B0%EA%B8%B0.md)
 * [2주차 정리](https://github.com/Younkyu/Younkyu/blob/master/pdf/170121%20-%202%EC%A3%BC%EC%B0%A8%20%ED%9A%8C%EA%B3%A0%EB%A1%9D.md)
-* [안드로이드 스튜디오 시작]()
-* [레이아웃,화면전환,계산기앱]()
+* [안드로이드 스튜디오 시작](https://github.com/Younkyu/Younkyu/blob/master/pdf/170123%20-%20%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4%20%EC%8B%9C%EC%9E%91.md)
+* [레이아웃,화면전환,계산기앱](https://github.com/Younkyu/Younkyu/blob/master/pdf/170124%20-%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83%2C%ED%99%94%EB%A9%B4%EC%A0%84%ED%99%98%2C%EA%B3%84%EC%82%B0%EA%B8%B0%EC%95%B1.md)
