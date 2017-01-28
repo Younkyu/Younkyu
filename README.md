@@ -1,4 +1,4 @@
-﻿이윤규의 코딩 공부입니다. 최신업데이트(170120)
+﻿이윤규의 코딩 공부입니다. 최신업데이트(170128)
 
 ### CONTENTS
 
@@ -21,6 +21,6 @@
 * [2주차 정리](https://github.com/Younkyu/Younkyu/blob/master/pdf/170121%20-%202%EC%A3%BC%EC%B0%A8%20%ED%9A%8C%EA%B3%A0%EB%A1%9D.md)
 * [안드로이드 스튜디오 시작](https://github.com/Younkyu/Younkyu/blob/master/pdf/170123%20-%20%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4%20%EC%8B%9C%EC%9E%91.md)
 * [레이아웃,화면전환,계산기앱](https://github.com/Younkyu/Younkyu/blob/master/pdf/170124%20-%20%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83%2C%ED%99%94%EB%A9%B4%EC%A0%84%ED%99%98%2C%EA%B3%84%EC%82%B0%EA%B8%B0%EC%95%B1.md)
-* [단위 변환기 만들기를 통해 보는 안드로이드 앱의 기본 구성]()
-* [인텐트]()
-* [게임만들기를 통한 3주차 정리]()
+* [단위 변환기 만들기를 통해 보는 안드로이드 앱의 기본 구성](https://github.com/Younkyu/Younkyu/blob/master/pdf/170125%20-%EB%8B%A8%EC%9C%84%20%EB%B3%80%ED%99%98%EA%B8%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0%EB%A5%BC%20%ED%86%B5%ED%95%B4%20%EB%B3%B4%EB%8A%94%20%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%95%B1%EC%9D%98%20%EA%B8%B0%EB%B3%B8%20%EA%B5%AC%EC%84%B1.md)
+* [인텐트](https://github.com/Younkyu/Younkyu/blob/master/pdf/170126%20-%20%EC%9D%B8%ED%85%90%ED%8A%B8.md)
+* [게임만들기를 통한 3주차 정리](https://github.com/Younkyu/Younkyu/blob/master/pdf/170128%20-%20%EA%B2%8C%EC%9E%84%EB%A7%8C%EB%93%A4%EA%B8%B0%EB%A5%BC%20%ED%86%B5%ED%95%9C%203%EC%A3%BC%EC%B0%A8%20%EC%A0%95%EB%A6%AC.md)
