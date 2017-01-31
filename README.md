@@ -24,4 +24,4 @@
 * [단위 변환기 만들기를 통해 보는 안드로이드 앱의 기본 구성](https://github.com/Younkyu/Younkyu/blob/master/pdf/170125%20-%EB%8B%A8%EC%9C%84%20%EB%B3%80%ED%99%98%EA%B8%B0%20%EB%A7%8C%EB%93%A4%EA%B8%B0%EB%A5%BC%20%ED%86%B5%ED%95%B4%20%EB%B3%B4%EB%8A%94%20%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EC%95%B1%EC%9D%98%20%EA%B8%B0%EB%B3%B8%20%EA%B5%AC%EC%84%B1.md)
 * [인텐트](https://github.com/Younkyu/Younkyu/blob/master/pdf/170126%20-%20%EC%9D%B8%ED%85%90%ED%8A%B8.md)
 * [게임만들기를 통한 3주차 정리](https://github.com/Younkyu/Younkyu/blob/master/pdf/170128%20-%20%EA%B2%8C%EC%9E%84%EB%A7%8C%EB%93%A4%EA%B8%B0%EB%A5%BC%20%ED%86%B5%ED%95%9C%203%EC%A3%BC%EC%B0%A8%20%EC%A0%95%EB%A6%AC.md)
-* [리스트뷰, 리사이클뷰]()
+* [리스트뷰, 리사이클뷰](https://github.com/Younkyu/Younkyu/blob/master/pdf/170131%20-%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%B7%B0%2C%20%EB%A6%AC%EC%82%AC%EC%9D%B4%ED%81%B4%EB%B7%B0.md)
