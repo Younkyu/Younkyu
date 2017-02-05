@@ -1,4 +1,4 @@
-﻿이윤규의 코딩 공부입니다. 최신업데이트(170201)
+﻿이윤규의 코딩 공부입니다. 최신업데이트(170205)
 
 ### CONTENTS
 
@@ -27,3 +27,4 @@
 * [리스트뷰, 리사이클뷰](https://github.com/Younkyu/Younkyu/blob/master/pdf/170131%20-%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%EB%B7%B0%2C%20%EB%A6%AC%EC%82%AC%EC%9D%B4%ED%81%B4%EB%B7%B0.md)
 * [inflater,Content Provider(Resolver)](https://github.com/Younkyu/Younkyu/blob/master/pdf/170201%20-%20inflater%2CContent%20Provider(Resolver).md)
 * [MediaPlayer, Viewpaser 사용법](https://github.com/Younkyu/Younkyu/blob/master/pdf/170202%20-%20MediaPlayer%2C%20Viewpaser%20%EC%82%AC%EC%9A%A9%EB%B2%95.md)
+* [4주차 weekly, 포토앨범]()
