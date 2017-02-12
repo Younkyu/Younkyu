@@ -37,3 +37,4 @@
 * [권한설정](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/%EA%B6%8C%ED%95%9C%EC%84%A4%EC%A0%95.md)
 * [객체지향 설계원리, SOLID](https://github.com/Younkyu/Younkyu/blob/master/pdf/170208%20-%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%EC%84%A4%EA%B3%84%EC%9B%90%EB%A6%AC%2C%20SOLID.md)
 * [디자인패턴(1)](https://github.com/Younkyu/Younkyu/blob/master/pdf/170209%20-%20%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4(1).md)
+* [5주차 weekly - CAMERA Album & Music Player]()
