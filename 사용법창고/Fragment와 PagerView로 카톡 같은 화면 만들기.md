@@ -42,6 +42,30 @@
 	        vp.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 	        // 2. 탭이 변경되었을 때 페이지를 바꿔주는 리스너
 	        tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(vp));
+		
+			class PagerAdapter extends FragmentStatePagerAdapter {
+
+		public PagerAdapter(FragmentManager fm) {
+		    super(fm);
+		}
+
+		@Override
+		public Fragment getItem(int position) {
+		    Fragment fragment = null;
+		    switch (position) {
+			case 0 : fragment = one; break;
+			case 1 : fragment = two; break;
+			case 2 : fragment = three; break;
+			case 3 : fragment = four; break;
+		    }
+		    return fragment;
+		}
+
+		@Override
+		public int getCount() {
+		    return TAB_COUNT;
+		}
+	    }
 
 ####**주의 해야할 점**
  Fragment는 create하면 return으로 레이아웃 인플레이터를 받기 때문에 사용할 때 이것에 주의해서 사용해야 한다.
