@@ -1,11 +1,13 @@
 package com.example.younkyu.teacher.manageran;
 
 
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.younkyu.teacher.R;
 
@@ -14,6 +16,7 @@ import com.example.younkyu.teacher.R;
  */
 public class GimFragment extends Fragment {
 
+    View view;
 
     public GimFragment() {
         // Required empty public constructor
@@ -24,7 +27,12 @@ public class GimFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gim, container, false);
+
+        view = inflater.inflate(R.layout.fragment_gim, container, false);
+
+
+
+        return view;
     }
 
 }

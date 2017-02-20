@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.younkyu.teacher.domain.Memo;
+import com.example.younkyu.teacher.domain.Teachers;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.support.ConnectionSource;
@@ -18,7 +19,7 @@ import java.sql.SQLException;
 public class DBHelper extends OrmLiteSqliteOpenHelper {
 
     public static final String DB_NAME = "database.db";
-    public static final int DB_VERSION = 2;
+    public static final int DB_VERSION = 1;
 
 
     public DBHelper(Context context) {
@@ -34,7 +35,7 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
 
         try {
             // Bbs.class 파일에 정이된 테이블을 생성한다.
-            TableUtils.createTable(connectionSource, Memo.class);
+            TableUtils.createTable(connectionSource, Teachers.class);
         } catch(SQLException e) {
             e.printStackTrace();
         }
@@ -52,7 +53,7 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
 
         try {
             //Bbs.class에 정의된 테이블 삭제
-            TableUtils.dropTable(connectionSource, Memo.class, false);
+            TableUtils.dropTable(connectionSource, Teachers.class, false);
             // 데이터를 보존해야 될 필요성이 있으면 중간 처리를 해줘야만 한다.
             // TODO : 임시테이블을 생성한 후 데이터를 먼저 저장하고 onCreate 이후에 데이터를 입력해준다.
             // oncreate를 호추랳서 테이블을 생성해준다.
@@ -70,7 +71,16 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
         return memoDao;
     }
 
+    public Dao<Teachers, Integer> getTeachersDao() throws SQLException{
+        if(teachersDao == null){
+            teachersDao = getDao(Teachers.class);
+        }
+        return teachersDao;
+    }
+
     private Dao<Memo, Integer> memoDao = null;
+
+    private Dao<Teachers, Integer> teachersDao = null;
 //
 //    public Dao<Bbs, Integer> getDao() throws SQLException {
 //        if(bbsDao == null) {
