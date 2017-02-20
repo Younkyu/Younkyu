@@ -44,3 +44,7 @@
 * [ORMLITE](https://github.com/Younkyu/Younkyu/blob/master/pdf/170214%20-%20ORMLITE.md)
 * [Dialog](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/Dialog.md)
 * [Fragment Bundle](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/Fragment%20Bundle%20%EC%82%AC%EC%9A%A9.md)
+* [TimeUtil(메소드시간측정)](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/TimeUtil(%EB%A9%94%EC%86%8C%EB%93%9C%20%EC%8B%9C%EA%B0%84%20%EC%B8%A1%EC%A0%95).md)
+* [람다식 사용법](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/%EB%9E%8C%EB%8B%A4%EC%8B%9D%EC%82%AC%EC%9A%A9%EB%B2%95.md)
+* [Java MySQL](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/Java%20MySQL.md)
+* [Java 날짜](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/Java%20%EB%82%A0%EC%A7%9C.md)
