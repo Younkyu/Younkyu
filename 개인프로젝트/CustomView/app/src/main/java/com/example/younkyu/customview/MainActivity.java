@@ -61,7 +61,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         fr = (FrameLayout) findViewById(R.id.fr);
         btndown = (Button) findViewById(R.id.btndown);
         btnup = (Button) findViewById(R.id.btnup);
@@ -107,8 +106,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         
         player_x = 5;
         player_y = 6;
-
-
 
     }
 
@@ -440,20 +437,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Paint black = new Paint();
         Paint yellow = new Paint();
         Paint blue = new Paint();
+        Paint green = new Paint();
 
         public CustomView(Context context) {
             super(context);
-
             yellow.setColor(Color.YELLOW);
-
             blue.setColor(Color.BLUE);
             magenta.setColor(Color.MAGENTA);
             black.setColor(Color.BLACK);
-
+            green.setColor(Color.GREEN);
         }
-
-
-
 
         @Override
         protected void onDraw(Canvas canvas) {
@@ -478,9 +471,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             canvas.drawCircle(gong6x*unit+player_radius,gong6y*unit+player_radius,gongradius,blue);
             // 2. canvas에 캐릭터 그리기
             canvas.drawCircle(player_x*unit+player_radius,player_y*unit+player_radius,player_radius,magenta);
-        }
-    }
+            canvas.drawRect(player_x*unit+player_radius/5,player_y*unit+player_radius/5,player_x*unit+player_radius,player_y*unit+player_radius, green);
+            canvas.drawRect(player_x*unit+player_radius/5+player_radius,player_y*unit+player_radius/5,player_x*unit+player_radius+player_radius,player_y*unit+player_radius, green);
+            canvas.drawLine(player_x*unit+player_radius,
+                    player_y*(unit)+player_radius*3/2,
+                    player_x*(unit)+player_radius*3/2,
+                    player_y*(unit)+player_radius*3/2,
+                    black);
 
+
+        }
+
+    }
 
     private void gameset() {
         if((gong1x >=3 && gong1y >=4 && gong1y <=5 && gong1x <=5)
