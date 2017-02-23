@@ -49,3 +49,6 @@
 * [Java MySQL](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/Java%20MySQL.md)
 * [Java 날짜](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/Java%20%EB%82%A0%EC%A7%9C.md)
 * [CustomView 활용해 pushpush 만들기](https://github.com/Younkyu/Younkyu/blob/master/pdf/170221%20-%20CustomView%20%ED%99%9C%EC%9A%A9%ED%95%B4%20pushpush%20%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
+* [Thread 이용해 초시계 만들기]()
+* [AsyncTask 이용해 파일 불러오기]()
+* [AsyncTask 이용해 URL로 파일 다운받기]()
