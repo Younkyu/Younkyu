@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.younkyu.android.photomusicplayerservice.MusicFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cons"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/viewpaser"
+            android:layout_above="@+id/cons"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+            android:layout_marginBottom="16dp">
+
+        </android.support.v4.view.ViewPager>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            android:layout_height="119dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/constraintLayout"
+            app:layout_constraintHorizontal_bias="1.0">
+
+            <CheckBox
+                android:text="랜덤기능"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cbrd"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtcurrent"
+                app:layout_constraintRight_toRightOf="@+id/txtDuration"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtDuration"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDuration"
+                app:layout_constraintRight_toRightOf="@+id/seekBar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/seekBar"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintVertical_bias="0.19"
+                android:textColor="#ff000000" />
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/play"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintVertical_bias="0.69" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_media_rew"
+                android:id="@+id/dui"
+                app:layout_constraintRight_toLeftOf="@+id/play"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.65999997" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_media_ff"
+                android:id="@+id/ap"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toRightOf="@+id/play"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintVertical_bias="0.65999997" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_media_play"
+                android:id="@+id/play"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.65999997" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>
