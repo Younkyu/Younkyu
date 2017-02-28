@@ -72,17 +72,13 @@ public class MainActivity extends AppCompatActivity
 
         ViewPager vp = (ViewPager) findViewById(R.id.vp);
 
-        List<Fragment> fragments = new ArrayList<>();
-
-
-
         // 아답터 생성
         PagerAdapters adapter = new PagerAdapters(getSupportFragmentManager());
 
-        adapter.add(new TitleFragment());
-        adapter.add(new ArtistFragment());
-        adapter.add(new AlbumFragment());
-        adapter.add(new GenreFragment());
+        adapter.add(ListFragment.newInstance(1,ListFragment.TYPE_SONG));
+        adapter.add(ListFragment.newInstance(2,ListFragment.TYPE_ARTIST));
+        adapter.add(ListFragment.newInstance(3,""));
+        adapter.add(ListFragment.newInstance(4,""));
 
         vp.setAdapter(adapter);
 
