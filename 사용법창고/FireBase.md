@@ -54,3 +54,26 @@
 	            msgMap.put("msg",msg);
 	
 	            msgRef.setValue(msgMap); //map형태로 저장
+
+
+		            //bbs 레퍼런스(테이블)에 키를 생성
+	        String key = bbsRef.push().getKey();
+
+	        // 2. 입력될 키,값 세트(레코드)를 생성
+	        Map<String, String> postValues = new HashMap<>();
+	        postValues.put("title",title);
+	        postValues.put("content",content);
+
+	        // 3. 생성된 레코드를 데이터베이스에 입력
+	        // bbs - 생성된키 - title : 값
+	        //                  content : 값
+	        // bbs - 생성된키2 - title : 값
+	        //                   content : 값
+
+	//        Map<String, Object> keyMap = new HashMap<>();
+	//        keyMap.put(key, postValues);
+	//
+	//        bbsRef.updateChildren(keyMap);
+
+	        DatabaseReference key_Ref = bbsRef.child(key);
+	        key_Ref.setValue(postValues);
