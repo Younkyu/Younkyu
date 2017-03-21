@@ -1,5 +1,8 @@
 ﻿이윤규의 코딩 공부입니다. 최신업데이트(170321)
 
+* [이력서]()
+* [프로젝트 기획안]()
+
 ### CONTENTS
 
 1. 프로그래밍 개론
@@ -70,7 +73,7 @@
 
 
 
-### **Project**
+2. Project
 
 * [AlbumPlayer](https://github.com/Younkyu/Younkyu/tree/master/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/AlbumPlayer)
 * [AsyncTask](https://github.com/Younkyu/Younkyu/tree/master/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/AsyncTask)
