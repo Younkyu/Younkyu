@@ -72,7 +72,7 @@
 * [SharedPreference](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/SharedPreference.md)
 * [nodejs-1](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/nodejs-1.md)
 * [nodejs-2](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/nodejs-2.md)
-
+* [EditText있는 activity 키보드 숨기기]()
 
 
 2. Project
