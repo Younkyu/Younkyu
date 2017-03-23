@@ -1,4 +1,4 @@
-﻿이윤규의 코딩 공부입니다. 최신업데이트(170321)
+﻿이윤규의 코딩 공부입니다. 최신업데이트(170323)
 
 * [이력서](https://github.com/Younkyu/Younkyu/blob/master/%EC%9D%B4%EB%A0%A5%EC%84%9C/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EA%B0%9C%EB%B0%9C%20SCHOOL%20%EC%9D%B4%EB%A0%A5%EC%84%9C_%EC%9D%B4%EC%9C%A4%EA%B7%9C.pdf)
 * [프로젝트 기획안](https://github.com/Younkyu/Younkyu/blob/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%95%88/GORI_%EC%95%B1%EA%B5%AC%EB%8F%99_%EA%B8%B0%ED%9A%8D%EC%95%88_0321.pdf)
@@ -71,7 +71,7 @@
 * [PropertyUtil](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/PropertyUtil.md)
 * [SharedPreference](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/SharedPreference.md)
 * [nodejs-1](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/nodejs-1.md)
-* [nodejs-2]()
+* [nodejs-2](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/nodejs-2.md)
 
 
 
