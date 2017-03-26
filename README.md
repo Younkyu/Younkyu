@@ -72,7 +72,9 @@
 * [SharedPreference](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/SharedPreference.md)
 * [nodejs-1](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/nodejs-1.md)
 * [nodejs-2](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/nodejs-2.md)
-* [EditText있는 activity 키보드 숨기기](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/EditText%EC%9E%88%EB%8A%94%20activity%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EC%88%A8%EA%B8%B0%EA%B8%B0.md)
+* [EditText있는 activity 키보드 숨기기](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/EditText%EC%9E%88%EB%8A%94%2*0activity%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EC%88%A8%EA%B8%B0%EA%B8%B0.md)
+* [Realm]()
+* [kotlin]()
 
 
 2. Project
