@@ -73,8 +73,8 @@
 * [nodejs-1](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/nodejs-1.md)
 * [nodejs-2](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/nodejs-2.md)
 * [EditText있는 activity 키보드 숨기기](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/EditText%EC%9E%88%EB%8A%94%2*0activity%20%ED%82%A4%EB%B3%B4%EB%93%9C%20%EC%88%A8%EA%B8%B0%EA%B8%B0.md)
-* [Realm]()
-* [kotlin]()
+* [Realm](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/Realm.md)
+* [Kotlin](https://github.com/Younkyu/Younkyu/blob/master/%EC%82%AC%EC%9A%A9%EB%B2%95%EC%B0%BD%EA%B3%A0/Kotlin.md)
 
 
 2. Project
@@ -121,4 +121,4 @@
 * [ViewCustom](https://github.com/Younkyu/Younkyu/tree/master/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/ViewCustom)
 * [rxandroid-study-master](https://github.com/Younkyu/Younkyu/tree/master/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/rxandroid-study-master)
 * [MemoWithNodejs](https://github.com/Younkyu/Younkyu/tree/master/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/MemoWithNodejs)
-* [kotlinsimple]()
+* [Kotlinsimple](https://github.com/Younkyu/Younkyu/tree/master/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/SimpleContacts-c1fb2a9b45dcc6a9c4a55d699e21033e6c3953a2)
