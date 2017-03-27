@@ -1,0 +1,37 @@
+### **버튼 custom**
+
+**custom_button.xml을 drawable에 추가**
+
+
+
+		<?xml version="1.0" encoding="utf-8"?>
+	<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+	    <item android:state_pressed="true">
+	        <shape >
+	            <solid android:color="#FFFFFF"/>
+	        <stroke android:width="1dp" android:color="#FF69B4"/>
+	        <corners android:bottomLeftRadius="30dp"
+	            android:bottomRightRadius="30dp"
+	            android:topLeftRadius="30dp"
+	            android:topRightRadius="30dp"/>
+	    </shape>
+	    </item>
+	    <item android:state_pressed="false">
+	        <shape >
+	            <gradient android:angle="270"
+	                android:endColor="#FFFFFF"
+	                android:startColor="#FFFFFF"/>
+	            <stroke android:width="1dp"
+	                android:color="#b6b6b6"/>
+	            <corners android:bottomLeftRadius="30dp"
+	                android:bottomRightRadius="30dp"
+	                android:topLeftRadius="30dp"
+	                android:topRightRadius="30dp"/>
+	        </shape>
+	    </item>
+	</selector>
+
+
+**사용**
+
+	android:background="@drawable/custom_button"

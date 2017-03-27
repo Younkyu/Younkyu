@@ -5,7 +5,7 @@
 
 	 classpath 'io.realm:realm-gradle-plugin:3.0.0'
 
-**Buildgradle(App**
+**Buildgradle(App)**
 
 	 apply plugin: 'realm-android'
 
@@ -50,6 +50,10 @@
 	        this.address = address;
 	    }
 	}
+
+**초기화 필수(어플리케이션을 상속받거나, 메인액티비티에서)**
+
+	Realm.init(this);
 
 
 **읽기**
@@ -116,5 +120,6 @@
 	        realm.commitTransaction();
 
 	        realm.close();
+
 
 
