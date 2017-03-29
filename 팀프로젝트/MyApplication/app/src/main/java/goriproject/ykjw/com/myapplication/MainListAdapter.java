@@ -59,12 +59,17 @@ public class MainListAdapter extends RecyclerView.Adapter<MainListAdapter.Custom
         tutor tutors = datas.get(position);
 
         holder.ratingBar.setRating(tutors.getTutor_rating()/20);
+        //레이팅바의 색깔을 바꿔야 할 경우에 사용
         LayerDrawable stars = (LayerDrawable) holder.ratingBar.getProgressDrawable();
         stars.getDrawable(2).setColorFilter(Color.YELLOW, PorterDuff.Mode.SRC_ATOP);
         holder.class_name.setText(tutors.getClass_name());
         holder.tutor_name.setText(tutors.getTutor_name());
 
-        Glide.with(context).load(R.drawable.profile_dummy).into(holder.imageView2);
+        if(tutors.getCampus().equals("고려대")) {
+            Glide.with(context).load(R.drawable.profile_dummy2).into(holder.imageView2);
+        } else {
+            Glide.with(context).load(R.drawable.profile_dummy).into(holder.imageView2);
+        }
         Glide.with(context).load(R.drawable.list_dummy).thumbnail(0.1f).into(new ViewTarget<ConstraintLayout, GlideDrawable>(holder.itemback) {
             @Override
             public void onResourceReady(GlideDrawable resource, GlideAnimation anim) {

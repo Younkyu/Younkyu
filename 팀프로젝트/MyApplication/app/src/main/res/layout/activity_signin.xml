@@ -4,6 +4,252 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#88000000"
     tools:context="goriproject.ykjw.com.myapplication.SignInActivity">
 
+    <View
+        android:id="@+id/login_batang"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/login_sepa_bottom"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/loginbar"
+        app:layout_constraintRight_toLeftOf="@+id/login_right_line"
+        app:layout_constraintTop_toTopOf="@+id/loginbar"
+        app:layout_constraintVertical_bias="1.0"></View>
+
+    <TextView
+        android:id="@+id/loginbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:text="  로그인"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/loginfinish"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:elevation="11dp"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toRightOf="@+id/loginbar"
+        app:layout_constraintTop_toTopOf="@+id/loginbar"
+        app:srcCompat="@drawable/cancel" />
+
+    <Button
+        android:id="@+id/facebooklogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_facebook_button"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="0.9초만에 페북으로 로그인"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/loginbar"
+        app:layout_constraintRight_toRightOf="@+id/loginbar"
+        app:layout_constraintTop_toBottomOf="@+id/loginbar"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <View
+        android:id="@+id/login_left_line"
+        android:layout_width="1dp"
+        android:layout_height="500dp"
+        android:background="#b6b6b6"
+        app:layout_constraintLeft_toLeftOf="@+id/loginbar"
+        app:layout_constraintTop_toTopOf="@+id/loginbar"></View>
+
+    <View
+        android:id="@+id/login_sepa_bottom"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="0dp"
+        android:background="#b6b6b6"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="@+id/login_left_line"
+        app:layout_constraintRight_toLeftOf="@+id/login_right_line"
+        app:layout_constraintTop_toBottomOf="@+id/login_right_line"></View>
+
+    <View
+        android:id="@+id/login_sepa_bottom2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="4dp"
+        android:background="#b6b6b6"
+        app:layout_constraintLeft_toRightOf="@+id/login_left_line"
+        app:layout_constraintRight_toRightOf="@+id/login_right_line"
+        app:layout_constraintTop_toBottomOf="@+id/findpassword"></View>
+
+    <View
+        android:id="@+id/login_sepa_1"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="#b6b6b6"
+        app:layout_constraintLeft_toRightOf="@+id/login_left_line"
+        app:layout_constraintTop_toBottomOf="@+id/facebooklogin"></View>
+
+    <View
+        android:id="@+id/login_sepa_2"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="28dp"
+        android:background="#b6b6b6"
+        app:layout_constraintRight_toLeftOf="@+id/login_right_line"
+        app:layout_constraintTop_toBottomOf="@+id/facebooklogin"></View>
+
+    <View
+        android:id="@+id/login_right_line"
+        android:layout_width="1dp"
+        android:layout_height="500dp"
+        android:background="#b6b6b6"
+        app:layout_constraintRight_toRightOf="@+id/loginbar"
+        app:layout_constraintTop_toTopOf="@+id/loginbar"></View>
+
+    <TextView
+        android:id="@+id/login_txt_ddo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="또는"
+        app:layout_constraintLeft_toRightOf="@+id/login_sepa_1"
+        app:layout_constraintRight_toLeftOf="@+id/login_sepa_2"
+        app:layout_constraintTop_toBottomOf="@+id/facebooklogin"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_custom"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="@+id/facebooklogin"
+        app:layout_constraintRight_toRightOf="@+id/facebooklogin"
+        app:layout_constraintTop_toBottomOf="@+id/login_txt_ddo" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_custom2"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/login_id"
+        app:layout_constraintRight_toRightOf="@+id/login_id"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/login_id" />
+
+    <Button
+        android:id="@+id/email_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_signup_button"
+        android:text="이메일아이디로 가입하기"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="@+id/facebooklogin"
+        app:layout_constraintRight_toRightOf="@+id/facebooklogin"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/autologin_check" />
+
+    <CheckBox
+        android:id="@+id/autologin_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="로그인 유지"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@+id/login_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
+
+    <TextView
+        android:id="@+id/findpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="비밀번호 찾기"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@+id/email_login"
+        app:layout_constraintTop_toBottomOf="@+id/email_login" />
+
+    <TextView
+        android:id="@+id/singupgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:text="당장가입"
+        android:textColor="@color/colorAccent"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nogorisign"
+        app:layout_constraintLeft_toRightOf="@+id/nogorisign" />
+
+    <TextView
+        android:id="@+id/nogorisign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:text="아직 고리 회원이 아니세요?"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@+id/findpassword"
+        app:layout_constraintTop_toBottomOf="@+id/login_sepa_bottom2" />
 </android.support.constraint.ConstraintLayout>

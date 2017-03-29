@@ -82,7 +82,7 @@ public class TutorLoader {
         tutor8.setCategory("외국어");
         tutor8.setLocation("사당");
         tutor8.setTutor_name("장재광");
-        tutor8.setClass_name("스페인어");
+        tutor8.setClass_name("스페인어초급부터 완벽하게");
         tutor8.setTutor_rating(100);
         datas.add(tutor8);
 

@@ -4,6 +4,255 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#88000000"
     tools:context="goriproject.ykjw.com.myapplication.SignUpActivity">
 
+    <View
+        android:id="@+id/signup_batang"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/signup_sepa_bottom"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintLeft_toLeftOf="@+id/signupbar"
+        app:layout_constraintRight_toLeftOf="@+id/signup_right_line"
+        app:layout_constraintTop_toTopOf="@+id/signupbar"
+        app:layout_constraintVertical_bias="0.952"></View>
+
+    <TextView
+        android:id="@+id/signupbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:text="  회원가입"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/signup_finish"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:elevation="11dp"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toRightOf="@+id/signupbar"
+        app:layout_constraintTop_toTopOf="@+id/signupbar"
+        app:srcCompat="@drawable/cancel" />
+
+    <Button
+        android:id="@+id/facebooksignup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_facebook_button"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="0.9초만에 페북으로 가입"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/signupbar"
+        app:layout_constraintRight_toRightOf="@+id/signupbar"
+        app:layout_constraintTop_toBottomOf="@+id/signupbar" />
+
+    <View
+        android:id="@+id/signup_left_line"
+        android:layout_width="1dp"
+        android:layout_height="500dp"
+        android:background="#b6b6b6"
+        app:layout_constraintLeft_toLeftOf="@+id/signupbar"
+        app:layout_constraintTop_toTopOf="@+id/signupbar"></View>
+
+    <View
+        android:id="@+id/signup_sepa_bottom"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="0dp"
+        android:background="#b6b6b6"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_left_line"
+        app:layout_constraintRight_toLeftOf="@+id/signup_right_line"
+        app:layout_constraintTop_toBottomOf="@+id/signup_right_line"></View>
+
+    <View
+        android:id="@+id/signup_sepa_1"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="#b6b6b6"
+        app:layout_constraintLeft_toRightOf="@+id/signup_left_line"
+        app:layout_constraintTop_toBottomOf="@+id/facebooksignup"></View>
+
+    <View
+        android:id="@+id/signup_sepa_2"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="28dp"
+        android:background="#b6b6b6"
+        app:layout_constraintRight_toLeftOf="@+id/signup_right_line"
+        app:layout_constraintTop_toBottomOf="@+id/facebooksignup"></View>
+
+    <View
+        android:id="@+id/signup_right_line"
+        android:layout_width="1dp"
+        android:layout_height="500dp"
+        android:background="#b6b6b6"
+        app:layout_constraintRight_toRightOf="@+id/signupbar"
+        app:layout_constraintTop_toTopOf="@+id/signupbar"></View>
+
+    <TextView
+        android:id="@+id/signup_txt_ddo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="또는"
+        app:layout_constraintLeft_toRightOf="@+id/signup_sepa_1"
+        app:layout_constraintRight_toLeftOf="@+id/signup_sepa_2"
+        app:layout_constraintTop_toBottomOf="@+id/facebooksignup" />
+
+    <EditText
+        android:id="@+id/signup_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_custom"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintLeft_toLeftOf="@+id/facebooksignup"
+        app:layout_constraintRight_toRightOf="@+id/facebooksignup"
+        app:layout_constraintTop_toBottomOf="@+id/signup_txt_ddo" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_custom2"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_id"
+        app:layout_constraintRight_toRightOf="@+id/signup_id"
+        app:layout_constraintTop_toBottomOf="@+id/signup_email" />
+
+    <EditText
+        android:id="@+id/signup_password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_custom2"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_password"
+        app:layout_constraintRight_toRightOf="@+id/signup_password"
+        app:layout_constraintTop_toBottomOf="@+id/signup_password" />
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_custom2"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_id"
+        app:layout_constraintRight_toRightOf="@+id/signup_id"
+        app:layout_constraintTop_toBottomOf="@+id/signup_id" />
+
+    <Button
+        android:id="@+id/email_signup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_signup_button"
+        android:text="이메일아이디로 가입하기"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/facebooksignup"
+        app:layout_constraintRight_toRightOf="@+id/facebooksignup"
+        app:layout_constraintTop_toBottomOf="@+id/signup_password2" />
+
+    <CheckBox
+        android:id="@+id/signup_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="고리이용약관 및 개인정보 취급방침에 동의합니다"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@+id/email_signup"
+        app:layout_constraintRight_toRightOf="@+id/email_signup"
+        app:layout_constraintTop_toBottomOf="@+id/email_signup" />
+
+    <TextView
+        android:id="@+id/areugori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:text="이미 고리 회원이세요?"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="@+id/signup_check"
+        app:layout_constraintTop_toBottomOf="@+id/signup_check" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:text="로그인"
+        android:textColor="@color/colorAccent"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@+id/areugori"
+        app:layout_constraintTop_toBottomOf="@+id/signup_check" />
 </android.support.constraint.ConstraintLayout>
+

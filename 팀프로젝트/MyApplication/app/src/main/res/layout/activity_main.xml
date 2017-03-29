@@ -34,11 +34,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:text="GORI"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="@color/colorAccent"
+            android:textSize="30sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
