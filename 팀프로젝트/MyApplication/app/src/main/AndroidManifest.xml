@@ -2,12 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="goriproject.ykjw.com.myapplication">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -22,6 +25,8 @@
         <activity android:name=".SignInActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".SignUpActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

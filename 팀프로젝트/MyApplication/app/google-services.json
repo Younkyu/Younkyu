@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "531617495060",
+    "firebase_url": "https://gorilogin-2c41f.firebaseio.com",
+    "project_id": "gorilogin-2c41f",
+    "storage_bucket": "gorilogin-2c41f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531617495060:android:368995d6a2b0a200",
+        "android_client_info": {
+          "package_name": "goriproject.ykjw.com.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531617495060-tk0brns0ivbotu7d0qua7sks11m7t8t6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "goriproject.ykjw.com.myapplication",
+            "certificate_hash": "20d042e9c1455e3c810a74ad2879bd8af66f3075"
+          }
+        },
+        {
+          "client_id": "531617495060-gqka4clvg4g0n1j5tpk2t4s7g7dtfv2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApzelbUxgImHMqR1FpWV9HP8c3LagR-vI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531617495060-gqka4clvg4g0n1j5tpk2t4s7g7dtfv2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

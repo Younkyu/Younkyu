@@ -33,7 +33,7 @@ public class TutorLoader {
 
         tutor tutor3 = new tutor();
         tutor3.setCampus("서울대");
-        tutor3.setCategory("헬스&뷰티");
+        tutor3.setCategory("헬스/뷰티");
         tutor3.setLocation("강남");
         tutor3.setTutor_name("장한솔");
         tutor3.setClass_name("필라테스사용설명서");
@@ -61,7 +61,7 @@ public class TutorLoader {
 
         tutor tutor6 = new tutor();
         tutor6.setCampus("서울대");
-        tutor6.setCategory("헬스&뷰티");
+        tutor6.setCategory("헬스/뷰티");
         tutor6.setLocation("사당");
         tutor6.setTutor_name("김다영");
         tutor6.setClass_name("스쿠버다이빙지랄");
@@ -70,7 +70,7 @@ public class TutorLoader {
 
         tutor tutor7 = new tutor();
         tutor7.setCampus("연세대");
-        tutor7.setCategory("음악&미술");
+        tutor7.setCategory("음악/미술");
         tutor7.setLocation("강남");
         tutor7.setTutor_name("전주은");
         tutor7.setClass_name("단소로 발바닥때리기");
@@ -97,7 +97,7 @@ public class TutorLoader {
 
         tutor tutor10 = new tutor();
         tutor10.setCampus("연세대");
-        tutor10.setCategory("헬스&뷰티");
+        tutor10.setCategory("헬스/뷰티");
         tutor10.setLocation("신촌");
         tutor10.setTutor_name("김환희");
         tutor10.setClass_name("나는예쁘니>~<");

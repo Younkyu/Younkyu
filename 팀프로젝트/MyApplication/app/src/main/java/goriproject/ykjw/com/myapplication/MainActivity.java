@@ -4,6 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -31,7 +35,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher {
+import static goriproject.ykjw.com.myapplication.Statics.useremail;
+import static goriproject.ykjw.com.myapplication.Statics.userid;
+import static goriproject.ykjw.com.myapplication.Statics.username;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, TextWatcher, NavigationView.OnNavigationItemSelectedListener {
 
     int location_menu_count = 0;
     int category_menu_count = 0;
@@ -43,7 +51,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     RecyclerView rv;
     ConstraintLayout location_menu, category_menu;
     Button btn_location_all, btn_campus_all, btn_campus_korea, btn_campus_yeonse,btn_campus_seoul,btn_campus_hongik,
-    btn_location_jamsil,btn_location_sadang,btn_location_sinchon,btn_location_gangnam;
+            btn_location_jamsil,btn_location_sadang,btn_location_sinchon,btn_location_gangnam;
+    Button btn_category_all, btn_campus_kunkuk, btn_campus_busan,btn_campus_ihwa,btn_campus_hanyang,
+            btn_campus_jungang, btn_location_jongro,btn_location_habjung,btn_location_yongsan,btn_location_hehwa, btn_location_mokdong;
+    Button btn_category_music, btn_category_helth,btn_category_other,btn_campus_other,btn_location_other,btn_category_language,
+            btn_category_cumputer, btn_category_sports, btn_category_major;
+    DrawerLayout drawer;
 
     @Override
     protected void onResume() {
@@ -66,6 +79,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+
+
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.setDrawerListener(toggle);
+        toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        if(userid != null) {
+            navigationView = (NavigationView) findViewById(R.id.nav_view);
+            // get menu from navigationView
+            Menu menu = navigationView.getMenu();
+            // find MenuItem you want to change
+            MenuItem logoutitem = menu.findItem(R.id.menu_signinout);
+            logoutitem.setTitle(R.string.logoutitem);
+        }
 
         location_menu = (ConstraintLayout)findViewById(R.id.location_menu);
         category_menu = (ConstraintLayout)findViewById(R.id.category_menu);
@@ -99,25 +132,70 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void button_connect() {
         btn_location_all = (Button)findViewById(R.id.btn_location_all);
         btn_campus_all = (Button)findViewById(R.id.btn_campus_all);
+        btn_campus_seoul = (Button)findViewById(R.id.btn_campus_seoul);
         btn_campus_korea = (Button)findViewById(R.id.btn_campus_korea);
         btn_campus_yeonse = (Button)findViewById(R.id.btn_campus_yeonse);
         btn_campus_hongik = (Button)findViewById(R.id.btn_campus_hongik);
-        btn_campus_seoul = (Button)findViewById(R.id.btn_campus_seoul);
+        btn_campus_kunkuk = (Button)findViewById(R.id.btn_campus_kunkuk);
+        btn_campus_busan = (Button)findViewById(R.id.btn_campus_busan);
+        btn_campus_ihwa = (Button)findViewById(R.id.btn_campus_ihwa);
+        btn_campus_jungang = (Button)findViewById(R.id.btn_campus_jungang);
+        btn_campus_hanyang = (Button)findViewById(R.id.btn_campus_hanyang);
+        btn_campus_other = (Button)findViewById(R.id.btn_campus_others);
+
         btn_location_gangnam = (Button)findViewById(R.id.btn_location_gangnam);
         btn_location_sadang = (Button)findViewById(R.id.btn_location_sadang);
         btn_location_sinchon = (Button)findViewById(R.id.btn_location_sinchon);
         btn_location_jamsil = (Button)findViewById(R.id.btn_location_jamsil);
+        btn_location_jongro = (Button)findViewById(R.id.btn_location_jongro);
+        btn_location_habjung = (Button)findViewById(R.id.btn_location_hapjung);
+        btn_location_hehwa = (Button)findViewById(R.id.btn_location_hehwa);
+        btn_location_yongsan = (Button)findViewById(R.id.btn_location_youngsan);
+        btn_location_mokdong = (Button)findViewById(R.id.btn_location_mokdong);
+        btn_location_other = (Button)findViewById(R.id.btn_location_other);
 
-        btn_location_jamsil.setOnClickListener(this);
-        btn_location_sinchon.setOnClickListener(this);
-        btn_location_sadang.setOnClickListener(this);
+        btn_category_all = (Button)findViewById(R.id.btn_category_all);
+        btn_category_major = (Button)findViewById(R.id.btn_category_major);
+        btn_category_music = (Button)findViewById(R.id.btn_category_music);
+        btn_category_cumputer = (Button)findViewById(R.id.btn_category_computer);
+        btn_category_language = (Button)findViewById(R.id.btn_category_language);
+        btn_category_sports = (Button)findViewById(R.id.btn_category_sports);
+        btn_category_helth = (Button)findViewById(R.id.btn_category_helth);
+        btn_category_other = (Button)findViewById(R.id.btn_category_other);
+
+
         btn_location_all.setOnClickListener(this);
-        btn_location_gangnam.setOnClickListener(this);
         btn_campus_all.setOnClickListener(this);
         btn_campus_seoul.setOnClickListener(this);
-        btn_campus_yeonse.setOnClickListener(this);
         btn_campus_korea.setOnClickListener(this);
+        btn_campus_yeonse.setOnClickListener(this);
         btn_campus_hongik.setOnClickListener(this);
+        btn_campus_kunkuk.setOnClickListener(this);
+        btn_campus_busan.setOnClickListener(this);
+        btn_campus_ihwa.setOnClickListener(this);
+        btn_campus_jungang.setOnClickListener(this);
+        btn_campus_hanyang.setOnClickListener(this);
+        btn_campus_other.setOnClickListener(this);
+
+        btn_location_gangnam.setOnClickListener(this);
+        btn_location_sadang.setOnClickListener(this);
+        btn_location_sinchon.setOnClickListener(this);
+        btn_location_jamsil.setOnClickListener(this);
+        btn_location_jongro.setOnClickListener(this);
+        btn_location_habjung.setOnClickListener(this);
+        btn_location_hehwa.setOnClickListener(this);
+        btn_location_yongsan.setOnClickListener(this);
+        btn_location_mokdong.setOnClickListener(this);
+        btn_location_other.setOnClickListener(this);
+
+        btn_category_all.setOnClickListener(this);
+        btn_category_major.setOnClickListener(this);
+        btn_category_music.setOnClickListener(this);
+        btn_category_cumputer.setOnClickListener(this);
+        btn_category_language.setOnClickListener(this);
+        btn_category_sports.setOnClickListener(this);
+        btn_category_helth.setOnClickListener(this);
+        btn_category_other.setOnClickListener(this);
 
     }
 
@@ -184,7 +262,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-            @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -200,13 +278,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_Sign_inout) {
-            Intent intent = new Intent(MainActivity.this, SignInActivity.class);
-            startActivity(intent);
+            drawer.openDrawer(GravityCompat.END);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
 
     @Override
     public void onClick(View v) {
@@ -240,6 +318,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 keword = "고려대";
                 campus_search(keword);
                 break;
+            case R.id.btn_campus_hanyang :
+                keword = "한양대";
+                campus_search(keword);
+                break;
+            case R.id.btn_campus_jungang :
+                keword = "중앙대";
+                campus_search(keword);
+                break;
+            case R.id.btn_campus_ihwa :
+                keword = "이화여대";
+                campus_search(keword);
+                break;
+            case R.id.btn_campus_kunkuk :
+                keword = "건국대";
+                campus_search(keword);
+                break;
+            case R.id.btn_campus_busan :
+                keword = "부산대";
+                campus_search(keword);
+                break;
+            case R.id.btn_campus_others :
+                keword = "학교기타";
+                campus_search(keword);
+                break;
             case R.id.btn_location_all :
                 datas2.clear();
                 datas2.addAll(TutorLoader.datas);
@@ -263,27 +365,94 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 keword = "신촌";
                 location_search(keword);
                 break;
+            case R.id.btn_location_hehwa :
+                keword = "혜화";
+                location_search(keword);
+                break;
+            case R.id.btn_location_hapjung :
+                keword = "합정";
+                location_search(keword);
+                break;
+            case R.id.btn_location_youngsan :
+                keword = "용산";
+                location_search(keword);
+                break;
+            case R.id.btn_location_jongro :
+                keword = "종로";
+                location_search(keword);
+                break;
+            case R.id.btn_location_mokdong :
+                keword = "목동";
+                location_search(keword);
+                break;
             case R.id.btn_location_sadang :
                 keword = "사당";
                 location_search(keword);
+                break;
+            case R.id.btn_location_other :
+                keword = "지역기타";
+                location_search(keword);
+                break;
+            case R.id.btn_category_all :
+                datas2.clear();
+                datas2.addAll(TutorLoader.datas);
+                Toast.makeText(MainActivity.this, "조건에 맞는 강의는 " + datas2.size() +"개입니다.", Toast.LENGTH_LONG).show();
+                location_menu.setVisibility(View.GONE);
+                category_menu.setVisibility(View.GONE);
+                img.setImageResource(R.drawable.arrow_down);
+                location_menu_count++;
+                category_menu_count++;
+                rca.notifyDataSetChanged();
+                break;
+            case R.id.btn_category_music :
+                keword = "음악/미술";
+                category_search(keword);
+                break;
+            case R.id.btn_category_major :
+                keword = "전공/취업";
+                category_search(keword);
+                break;
+            case R.id.btn_category_sports :
+                keword = "스포츠";
+                category_search(keword);
+                break;
+            case R.id.btn_category_language :
+                keword = "외국어";
+                category_search(keword);
+                break;
+            case R.id.btn_category_computer :
+                keword = "컴퓨터";
+                category_search(keword);
+                break;
+            case R.id.btn_category_helth :
+                keword = "헬스/뷰티";
+                category_search(keword);
+                break;
+            case R.id.btn_category_other :
+                keword = "카테고리기타";
+                category_search(keword);
                 break;
         }
     }
 
     public void campus_search(String keword) {
-        // 먼저 리스트에 표시되는 데이터 초기화
-        datas2.clear();
-        // 스태틱으로 선언 되어 있는 데이터에서 계속 정보를 받아서 리스트 표시
-        for(tutor item : TutorLoader.datas) {
-            if(item.getCampus().equals(keword)) {
-                //키워드와 같으면 바로 추가
-                datas2.add(item);
+            // 먼저 리스트에 표시되는 데이터 초기화
+            datas2.clear();
+            // 스태틱으로 선언 되어 있는 데이터에서 계속 정보를 받아서 리스트 표시
+            for(tutor item : TutorLoader.datas) {
+                if(item.getCampus().equals(keword)) {
+                    //키워드와 같으면 바로 추가
+                    datas2.add(item);
+                }
             }
-        }
-        if(datas2.size() == 0) {
-            Toast.makeText(MainActivity.this, "아직 조건에 맞는 강의가 없습니다.", Toast.LENGTH_LONG).show();
-            datas2.addAll(TutorLoader.datas);
-        } else {
+            if(datas2.size() == 0) {
+                Toast.makeText(MainActivity.this, "아직 조건에 맞는 강의가 없습니다.", Toast.LENGTH_LONG).show();
+                datas2.addAll(TutorLoader.datas);
+                location_menu.setVisibility(View.GONE);
+                category_menu.setVisibility(View.GONE);
+                img.setImageResource(R.drawable.arrow_down);
+                location_menu_count++;
+            } else {
             Toast.makeText(MainActivity.this, "조건에 맞는 강의는 " + datas2.size() +"개입니다.", Toast.LENGTH_LONG).show();
             location_menu.setVisibility(View.GONE);
             img.setImageResource(R.drawable.arrow_down);
@@ -301,6 +470,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(datas2.size() == 0) {
             Toast.makeText(MainActivity.this, "아직 조건에 맞는 클래스가 없습니다.", Toast.LENGTH_LONG).show();
+            location_menu.setVisibility(View.GONE);
+            category_menu.setVisibility(View.GONE);
+            img.setImageResource(R.drawable.arrow_down);
+            location_menu_count++;
             datas2.addAll(TutorLoader.datas);
         } else {
             Toast.makeText(MainActivity.this, "조건에 맞는 강의는 " + datas2.size() +"개입니다.", Toast.LENGTH_LONG).show();
@@ -311,6 +484,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         rca.notifyDataSetChanged();
     }
+
+    public void category_search(String keword) {
+        datas2.clear();
+        for(tutor item : TutorLoader.datas) {
+            if(item.getCategory().equals(keword)) {
+                datas2.add(item);
+            }
+        }
+        if(datas2.size() == 0) {
+            Toast.makeText(MainActivity.this, "아직 조건에 맞는 클래스가 없습니다.", Toast.LENGTH_LONG).show();
+            location_menu.setVisibility(View.GONE);
+            category_menu.setVisibility(View.GONE);
+            img2.setImageResource(R.drawable.arrow_down);
+            category_menu_count++;
+            datas2.addAll(TutorLoader.datas);
+        } else {
+            Toast.makeText(MainActivity.this, "조건에 맞는 강의는 " + datas2.size() +"개입니다.", Toast.LENGTH_LONG).show();
+            location_menu.setVisibility(View.GONE);
+            category_menu.setVisibility(View.GONE);
+            img2.setImageResource(R.drawable.arrow_down);
+            category_menu_count++;
+        }
+        rca.notifyDataSetChanged();
+    }
+
 
     @Override
     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -376,4 +574,46 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
     }
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
+        int id = item.getItemId();
+
+        if (id == R.id.menu_introduce_gori) {
+           //TODO 고리소개 페이지로드
+        } else if (id == R.id.menu_signinout) {
+            if(userid != null) {
+                userid = null;
+                username = null;
+                useremail = null;
+                item.setTitle("로그인");
+                Toast.makeText(MainActivity.this, "정상적으로 로그아웃 되었습니다.", Toast.LENGTH_SHORT).show();
+            }else {
+                Intent intent = new Intent(MainActivity.this, SignInActivity.class);
+                startActivity(intent);
+            }
+
+        } else if (id == R.id.menu_mypage) {
+            //TODO 마이페이지 고
+        } else if (id == R.id.menu_tutor_go) {
+            // 아직 구현할 생각 없음
+            Toast.makeText(MainActivity.this, "튜터등록은 웹사이트에서 해주세요!", Toast.LENGTH_LONG).show();
+        }
+
+        drawer.closeDrawer(GravityCompat.END);
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.END)) {
+            drawer.closeDrawer(GravityCompat.END);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
 }

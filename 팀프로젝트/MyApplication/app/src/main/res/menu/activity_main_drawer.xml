@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_introduce_gori"
+                    android:title="고리소개" />
+                <item
+                    android:id="@+id/menu_signinout"
+                    android:title="로그인" />
+                <item
+                    android:id="@+id/menu_mypage"
+                    android:title="Mypage" />
+                <item
+                    android:id="@+id/menu_tutor_go"
+                    android:title="튜터등록" />
+    </group>
+</menu>
